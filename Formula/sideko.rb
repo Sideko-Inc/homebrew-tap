@@ -1,20 +1,20 @@
 class Sideko < Formula
   desc "CLI for Sideko"
   homepage "https://sideko.dev"
-  version "1.0.5"
+  version "1.0.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Sideko-Inc/sideko/releases/download/v1.0.5/sideko-aarch64-apple-darwin.tar.xz"
-      sha256 "00c1b6fdef74948f41b384de8b4d0a8bee97b18a150d7cc23502c4b3793fbdce"
+      url "https://github.com/Sideko-Inc/sideko/releases/download/v1.0.6/sideko-aarch64-apple-darwin.tar.xz"
+      sha256 "ed74d690ba9e92af6a98bd086a34dd44734d25fa7f059db9690b5f6ed516d451"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Sideko-Inc/sideko/releases/download/v1.0.5/sideko-x86_64-apple-darwin.tar.xz"
-      sha256 "e5edfc2369e6253ce8247c6d33b5f6ee7cab3dfe294df33b5f115f7751c1f4af"
+      url "https://github.com/Sideko-Inc/sideko/releases/download/v1.0.6/sideko-x86_64-apple-darwin.tar.xz"
+      sha256 "e110544b64538aa008f6904bf04fa3ebb3d5c176f62471165ca6535fc7f4052a"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Sideko-Inc/sideko/releases/download/v1.0.5/sideko-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "d7fa08ce9da9b8461fe7a695651828a1fb8af235863335a781e3e602b55e0461"
+    url "https://github.com/Sideko-Inc/sideko/releases/download/v1.0.6/sideko-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "e97ce11624b7b3820cb8e54eaeb51b77d39910421e254811c058ea9128e2e929"
   end
 
   BINARY_ALIASES = {
